@@ -1,18 +1,18 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Example add-on
-version: "1.1.0"
+version: "master"
 slug: example
 description: Example add-on
 url: "https://github.com/home-assistant/addons-example/tree/main/example"
 arch:
-  - armhf
+  # - armhf
   - armv7
-  - aarch64
+  # - aarch64
   - amd64
-  - i386
+  # - i386
 init: false
 options:
-  message: "Hello world..."
+  message: "Hello world... here i am"
 schema:
   message: "str?"
-image: "ghcr.io/home-assistant/{arch}-addon-example"
+image: "ghcr.io/aveseli/firefly-iii/{arch}"
