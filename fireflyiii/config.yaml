@@ -1,5 +1,5 @@
 name: Firefly III
-version: 0.0.5
+version: 0.0.6
 slug: fireflyiii
 description: A free and open source personal finance manager
 url: https://github.com/aveseli/addon-firefly-iii/
@@ -16,6 +16,8 @@ hassio_api: true
 hassio_role: "default"
 map:
     - ssl
+    - share:rw
+    - config:rw
 ports:
     80/tcp: 3473
 ports_description:
